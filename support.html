@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Setup, troubleshooting, and support for DeskRoam">
+  <title>Support — DeskRoam</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">DeskRoam</a>
+    <nav aria-label="Site navigation">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a aria-current="page" href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="eyebrow">Help</p>
+    <h1>DeskRoam Support</h1>
+    <p class="lede">Use your iPhone or iPad as a private screen, keyboard, trackpad, and file bridge for your Mac.</p>
+
+    <h2>Get started</h2>
+    <ol>
+      <li>Install DeskRoam on your iPhone or iPad and the free DeskRoam Host from the Mac App Store.</li>
+      <li>Open DeskRoam Host and grant Screen Recording permission for viewing and Accessibility permission for keyboard and pointer control.</li>
+      <li>Keep both devices on a network where they can reach each other. A private network such as your local Wi-Fi or your own Tailscale network is recommended.</li>
+      <li>In the mobile app, add the address and port shown by the Mac host.</li>
+      <li>Enter the pairing code shown on the Mac. Once approved, the device can reconnect using a credential stored in Keychain.</li>
+    </ol>
+
+    <h2>Common fixes</h2>
+
+    <h3>The Mac screen is blank</h3>
+    <p>Open System Settings → Privacy &amp; Security → Screen Recording and enable DeskRoam Host. Quit and reopen the host after changing permission. Screen viewing can work without Accessibility permission, but Screen Recording is required.</p>
+
+    <h3>Keyboard, pointer, or shortcuts do not work</h3>
+    <p>Open System Settings → Privacy &amp; Security → Accessibility and enable DeskRoam Host. If the switch was already on after an update, turn it off and on again, then reopen the host.</p>
+
+    <h3>The devices cannot connect</h3>
+    <ul>
+      <li>Confirm DeskRoam Host is open and listening.</li>
+      <li>Check that the address and port in the mobile app match the Mac.</li>
+      <li>Make sure a firewall or guest Wi-Fi isolation is not blocking device-to-device traffic.</li>
+      <li>If the pairing credential is no longer accepted, forget the pairing on the mobile device and pair again with the current Mac code.</li>
+    </ul>
+
+    <h3>Audio or clipboard is not transferring</h3>
+    <p>These features are optional and must be enabled in DeskRoam. Clipboard text moves only when you choose to send it or enable synchronization. Pro access may be required after the trial ends.</p>
+
+    <h3>Where did a received file go?</h3>
+    <p>DeskRoam Host saves complete transfers to its “DeskRoam 받은 파일” received-files folder inside the Mac app container and reveals the file in Finder. DeskRoam removes incomplete transfers rather than leaving a partial file.</p>
+
+    <h3>Restore a purchase</h3>
+    <p>Open the DeskRoam purchase screen and choose Restore Purchases. The Pro unlock is a one-time, non-consumable App Store purchase. DeskRoam uses StoreKit and does not receive your payment details.</p>
+
+    <h2>Privacy and security</h2>
+    <p>DeskRoam sends session content directly between your devices over an encrypted connection. The developer does not receive it and does not operate analytics, advertising, tracking, or an account service. Read the full <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>Remove local data</h2>
+    <ul>
+      <li>Delete a saved Mac or forget its pairing in the mobile app.</li>
+      <li>Use Unregister on the Mac to revoke a trusted device, or Unregister All to revoke every device.</li>
+      <li>Delete received files in Finder.</li>
+      <li>Remove the apps to delete their app-container settings. Keychain items may persist after uninstall under Apple platform behavior, so unpair first when possible.</li>
+    </ul>
+
+    <h2>Contact support</h2>
+    <p>When contacting support, include the DeskRoam and DeskRoam Host versions, your iOS/iPadOS and macOS versions, and the exact message shown in the app. Do not send pairing codes, trusted-device credentials, clipboard contents, or private files.</p>
+
+    <p>Email <a href="mailto:j1024kh@gmail.com">j1024kh@gmail.com</a>. Support requests are handled in English or Korean.</p>
+  </main>
+
+  <footer class="site-footer">© 2026 DeskRoam · <a href="privacy.html">Privacy Policy</a></footer>
+</body>
+</html>
