@@ -21,7 +21,7 @@
     <p class="eyebrow">Privacy</p>
     <h1>Privacy Policy</h1>
     <p class="lede">DeskRoam is designed to work directly between devices you control. The developer does not operate a service that receives your screen, audio, clipboard, files, or input.</p>
-    <p class="updated">Effective and last updated: October 3, 2026</p>
+    <p class="updated">Effective and last updated: October 5, 2026</p>
 
     <div class="summary">
       <p><strong>In short:</strong> no developer data collection, no tracking, no advertising, no analytics, and no DeskRoam account. App settings and credentials stay on your devices. When you use a remote feature, its content travels directly between your iPhone or iPad and your Mac over an encrypted connection.</p>
@@ -46,16 +46,18 @@
     <h2>Data stored on your devices</h2>
     <p>DeskRoam stores only what it needs locally:</p>
     <ul>
-      <li><strong>Keychain:</strong> pairing secrets and trusted-device credentials. The iPhone or iPad app also stores its local seven-day trial record in Keychain so reinstalling the app does not restart the trial.</li>
+      <li><strong>Keychain:</strong> pairing secrets and trusted-device credentials. StoreKit transaction entitlements are checked on the device; DeskRoam does not keep a local trial clock or trial record.</li>
       <li><strong>App preferences:</strong> settings, keyboard layouts, saved Mac names and addresses, selected options, and recent connection details are stored in the app’s local preferences.</li>
       <li><strong>Received files:</strong> a file you send is saved in the DeskRoam received-files folder inside the Mac app’s container and revealed in Finder. Incomplete transfers are removed.</li>
       <li><strong>Clipboard:</strong> clipboard text is placed on the destination device’s system clipboard. DeskRoam does not keep a separate clipboard history.</li>
     </ul>
     <p>Screen frames, audio packets, and remote input events are used during the active connection and are not recorded by DeskRoam.</p>
 
-    <h2>Purchases and the free trial</h2>
-    <p>The Pro unlock is a one-time in-app purchase processed by Apple through StoreKit. Apple, not the developer’s app, handles payment information and the App Store account. DeskRoam checks Apple-signed transaction information on the device to determine whether Pro is owned; it does not send receipts to a developer server.</p>
-    <p>The optional seven-day trial is recorded locally in Keychain. The record contains trial timing and validity state, not identity, contact, or payment information.</p>
+    <h2>Purchases and subscription trial</h2>
+    <p>Apple processes purchases through StoreKit and handles payment information, eligibility, billing, and subscription renewal. DeskRoam checks Apple-signed transaction entitlements on the device and does not send receipts to a developer server.</p>
+    <p>DeskRoam offers a monthly auto-renewable subscription with a seven-day introductory free offer for eligible Apple Accounts, followed by the monthly price shown by the App Store until canceled. Eligibility is determined by Apple; accounts that are not eligible can still choose the monthly subscription without a free trial. A separate non-consumable purchase permanently unlocks Mac connection and every feature. An active subscription or the permanent purchase grants access. When subscription access ends, Mac connections are blocked unless another qualifying purchase is owned.</p>
+
+    <p>Use of the apps is subject to the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple standard End User License Agreement</a>.</p>
 
     <h2>Permissions</h2>
     <p>DeskRoam Host asks macOS for Screen Recording permission to share the Mac display and Accessibility permission to apply remote keyboard and pointer input. You control these permissions in macOS System Settings and can revoke them at any time. Clipboard, audio, and file-transfer features are under your control in DeskRoam.</p>
@@ -69,7 +71,7 @@
       <li>revoke Screen Recording or Accessibility permission in macOS System Settings; and</li>
       <li>uninstall the apps to remove their app-container data.</li>
     </ul>
-    <p>Apple operating systems may preserve Keychain items after an app is uninstalled. This includes pairing credentials and the local trial record. Use the in-app unpairing controls before uninstalling when available. For assistance with local data removal, use the contact method on the <a href="support.html">Support page</a>.</p>
+    <p>Apple operating systems may preserve Keychain items after an app is uninstalled, including pairing credentials. Use the in-app unpairing controls before uninstalling when available. For assistance with local data removal, use the contact method on the <a href="support.html">Support page</a>.</p>
 
     <h2>Sharing, sale, and tracking</h2>
     <p>The developer does not sell or share personal data, and does not track you across apps or websites. DeskRoam contains no ads.</p>
