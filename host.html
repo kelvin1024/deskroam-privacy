@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Install DeskRoam Host</title>
+<style>body{font:17px/1.65 system-ui,sans-serif;background:#f4f8fb;color:#162736;margin:0}main{max-width:800px;margin:60px auto;padding:28px}h1{line-height:1.15}a{color:#086b87}.download{display:inline-block;background:#086b87;color:white;padding:12px 20px;border-radius:12px;text-decoration:none}section{margin-top:36px}code{word-break:break-all}small{color:#536371}li{margin:10px 0}hr{border:0;border-top:1px solid #cddde5;margin:40px 0}</style></head>
+<body><main><h1>Install DeskRoam Host on your Mac</h1>
+<p>The Mac companion is free. It connects your Mac to the DeskRoam app on your iPhone or iPad. This page does not sell or unlock iOS access: eligible trials and purchases remain in the iOS app through Apple's in-app purchase.</p>
+<p><strong>macOS 15 or later · Apple silicon and Intel · Version 1.0.1 (2)</strong></p>
+<a class="download" href="https://github.com/kelvin1024/deskroam-privacy/releases/download/host-v1.0.1-build2/DeskRoamHost-1.0.1-2.dmg">Download free Mac Host (.dmg)</a>
+<p><a href="https://github.com/kelvin1024/deskroam-privacy/releases/download/host-v1.0.1-build2/SHA256SUMS.txt">SHA-256 checksum</a> · <a href="https://github.com/kelvin1024/deskroam-privacy/releases/tag/host-v1.0.1-build2">Release details</a></p>
+<section><h2>Set up your connection</h2><ol>
+<li>Open this page in a browser <strong>on your Mac</strong>. Download and open the disk image.</li>
+<li>Drag <strong>DeskRoamHost</strong> to <strong>Applications</strong>, then open it from Applications. The Host is Developer ID signed and notarized by Apple. You do not need to disable Gatekeeper.</li>
+<li>Grant <strong>Screen Recording</strong> to share the Mac display, and <strong>Accessibility</strong> for remote pointer, scrolling and keyboard input. Follow the Host's System Settings buttons. If macOS asks you to quit and reopen the Host, do so.</li>
+<li>Keep both devices on the same local network, or connect them through your own private Tailscale network. No public internet relay is provided.</li>
+<li>In DeskRoam on iPhone/iPad, choose <strong>Add Mac</strong>. Enter the address and pairing code shown by the Mac Host. Keep the pairing code private. Previously paired devices can reconnect using their stored credentials.</li>
+</ol><p>If the screen is visible but input does not work, check Accessibility for the installed Host. After replacing a build, macOS may require permission to be granted again.</p></section>
+<section><h2>Updates and troubleshooting</h2><p>Updates are manual: quit the Host, download the newer release, and replace the app in Applications. Keep a copy of the previous version if you need to roll back. No automatic updater is provided.</p><p>The Host remains sandboxed and stores pairing credentials in Keychain. Session content travels directly between your devices using encrypted transport; the developer does not collect it.</p><p><a href="./support.html">Support</a> · <a href="./">Privacy policy</a></p></section>
+<hr><section lang="ko"><h1>Mac에 DeskRoam Host 설치하기</h1>
+<p>Mac용 호스트는 무료입니다. iPhone 또는 iPad의 DeskRoam과 Mac을 연결합니다. iOS 앱의 무료 체험 및 구매는 Apple 앱 내 구입으로 제공되며, 이 페이지에서는 결제하거나 이용 권한을 구매하지 않습니다.</p>
+<p><strong>macOS 15 이상 · Apple Silicon 및 Intel 지원 · 버전 1.0.1 (2)</strong></p>
+<a class="download" href="https://github.com/kelvin1024/deskroam-privacy/releases/download/host-v1.0.1-build2/DeskRoamHost-1.0.1-2.dmg">무료 Mac 호스트 다운로드 (.dmg)</a>
+<ol><li><strong>Mac의 브라우저</strong>에서 이 페이지를 열고 설치 파일을 다운로드한 뒤 실행해 주세요.</li>
+<li><strong>DeskRoamHost</strong>를 <strong>응용 프로그램</strong> 폴더로 드래그한 후 해당 폴더에서 실행해 주세요. Developer ID 서명과 Apple 공증을 거친 앱이며, Gatekeeper를 해제할 필요가 없습니다.</li>
+<li>화면 공유를 위해 <strong>화면 기록</strong> 권한을, 마우스·스크롤·키보드 원격 입력을 위해 <strong>손쉬운 사용</strong> 권한을 허용해 주세요. 호스트의 시스템 설정 버튼을 이용할 수 있습니다. macOS에서 앱을 종료하고 다시 열도록 안내하면 따라 주세요.</li>
+<li>두 기기를 같은 로컬 네트워크에 연결하거나 개인 Tailscale 네트워크를 사용해 주세요. 공개 인터넷 중계 서비스는 제공하지 않습니다.</li>
+<li>iPhone/iPad의 DeskRoam에서 <strong>Mac 추가</strong>를 선택하고, Mac 호스트에 표시된 주소와 페어링 코드를 입력해 주세요. 페어링 코드는 다른 사람에게 공개하지 마세요.</li></ol>
+<p>화면은 보이지만 입력이 되지 않으면 설치된 호스트의 손쉬운 사용 권한을 확인해 주세요. 앱을 교체한 후에는 macOS에서 권한을 다시 허용해야 할 수 있습니다.</p>
+<p>업데이트는 수동으로 진행합니다. 호스트를 종료하고 새 설치 파일을 다운로드한 뒤 응용 프로그램 폴더의 앱을 교체해 주세요. 자동 업데이트 기능은 제공하지 않습니다. 이전 버전으로 돌아가야 한다면 기존 앱을 별도로 보관해 주세요.</p>
+<p>호스트는 샌드박스를 유지하며 페어링 자격 증명은 키체인에 저장합니다. 세션 데이터는 암호화되어 기기 사이에서 직접 전송되며 개발자가 수집하지 않습니다.</p></section>
+<small>Download the installer on a Mac, not on an iPhone or iPad.</small></main></body></html>
