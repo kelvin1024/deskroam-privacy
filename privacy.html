@@ -21,7 +21,7 @@
     <p class="eyebrow">Privacy</p>
     <h1>Privacy Policy</h1>
     <p class="lede">DeskRoam is designed to work directly between devices you control. The developer does not operate a service that receives your screen, audio, clipboard, files, or input.</p>
-    <p class="updated">Effective and last updated: October 5, 2026</p>
+    <p class="updated">Effective and last updated: October 17, 2026</p>
 
     <div class="summary">
       <p><strong>In short:</strong> no developer data collection, no tracking, no advertising, no analytics, and no DeskRoam account. App settings and credentials stay on your devices. When you use a remote feature, its content travels directly between your iPhone or iPad and your Mac over an encrypted connection.</p>
@@ -48,7 +48,7 @@
     <ul>
       <li><strong>Keychain:</strong> pairing secrets and trusted-device credentials. StoreKit transaction entitlements are checked on the device; DeskRoam does not keep a local trial clock or trial record.</li>
       <li><strong>App preferences:</strong> settings, keyboard layouts, saved Mac names and addresses, selected options, and recent connection details are stored in the app’s local preferences.</li>
-      <li><strong>Received files:</strong> a file you send is saved in the DeskRoam received-files folder inside the Mac app’s container and revealed in Finder. Incomplete transfers are removed.</li>
+      <li><strong>Received files:</strong> a file you send is saved in the DeskRoam folder inside your Mac’s Downloads folder and revealed in Finder. Incomplete transfers are removed.</li>
       <li><strong>Clipboard:</strong> clipboard text is placed on the destination device’s system clipboard. DeskRoam does not keep a separate clipboard history.</li>
     </ul>
     <p>Screen frames, audio packets, and remote input events are used during the active connection and are not recorded by DeskRoam.</p>
@@ -60,7 +60,7 @@
     <p>Use of the apps is subject to the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple standard End User License Agreement</a>.</p>
 
     <h2>Permissions</h2>
-    <p>DeskRoam Host asks macOS for Screen Recording permission to share the Mac display and Accessibility permission to apply remote keyboard and pointer input. You control these permissions in macOS System Settings and can revoke them at any time. Clipboard, audio, and file-transfer features are under your control in DeskRoam.</p>
+    <p>DeskRoam Host asks macOS for Screen Recording permission to share the Mac display and Accessibility permission to apply remote keyboard and pointer input and, in app mode, to resize the window of the app you chose so it fits your iPhone or iPad. The window’s original size and position are kept only in memory. Host attempts to restore them when app mode ends or the Host exits normally; restoration depends on the app and available permissions and is not guaranteed after a crash or forced termination. You control these permissions in macOS System Settings and can revoke them at any time. Clipboard, audio, and file-transfer features are under your control in DeskRoam.</p>
 
     <h2>Retention and deletion</h2>
     <p>Because the developer does not receive DeskRoam data, there is no developer-held account or server record to delete. Local settings remain until you change or remove them. You can:</p>
@@ -69,7 +69,7 @@
       <li>unregister one or all trusted devices in DeskRoam Host on the Mac;</li>
       <li>delete received files in Finder;</li>
       <li>revoke Screen Recording or Accessibility permission in macOS System Settings; and</li>
-      <li>uninstall the apps to remove their app-container data.</li>
+      <li>uninstall the apps, and delete the DeskRoam folder in Downloads to remove received files. Uninstalling does not necessarily remove local preferences or pairing credentials.</li>
     </ul>
     <p>Apple operating systems may preserve Keychain items after an app is uninstalled, including pairing credentials. Use the in-app unpairing controls before uninstalling when available. For assistance with local data removal, use the contact method on the <a href="support.html">Support page</a>.</p>
 
@@ -89,6 +89,6 @@
     <p>For privacy questions or requests, email <a href="mailto:j1024kh@gmail.com">j1024kh@gmail.com</a> or visit the <a href="support.html">DeskRoam Support page</a>.</p>
   </main>
 
-  <footer class="site-footer">© 2026 DeskRoam. This page describes DeskRoam 1.0.</footer>
+  <footer class="site-footer">© 2026 DeskRoam. This page describes DeskRoam 1.1.</footer>
 </body>
 </html>

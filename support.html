@@ -24,10 +24,10 @@
 
     <h2>Get started</h2>
     <ol>
-      <li>Install DeskRoam on your iPhone or iPad and the free <a href="https://apps.apple.com/app/id6818920408">DeskRoam Host for Mac</a> when available. The Mac app is currently awaiting App Review, so its public download may not yet be available.</li>
-      <li>Open DeskRoam Host and grant Screen Recording permission for viewing and Accessibility permission for keyboard and pointer control.</li>
+      <li>Install DeskRoam on your iPhone or iPad and the free <a href="host.html">DeskRoam Host for Mac</a>, a notarized direct download.</li>
+      <li>Open DeskRoam Host and grant Screen Recording permission for viewing and Accessibility permission for keyboard and pointer control and for app mode.</li>
       <li>Keep both devices on a network where they can reach each other. A private network such as your local Wi-Fi or your own Tailscale network is recommended.</li>
-      <li>In the mobile app, add the address and port shown by the Mac host.</li>
+      <li>On the Mac, choose “Copy for iPhone/iPad” and paste it in DeskRoam to add the Mac in one step, or add the address and port shown by the Mac host yourself.</li>
       <li>Enter the pairing code shown on the Mac. Once approved, the device can reconnect using a credential stored in Keychain.</li>
       <li>Choose a monthly subscription or a one-time permanent purchase to connect. Eligible Apple Accounts may receive a seven-day introductory offer for the monthly subscription; Apple determines eligibility.</li>
     </ol>
@@ -53,11 +53,14 @@
 
     <p>The U.S. subscription price is US$0.99 per month after any eligible seven-day free trial; the separate permanent purchase is US$9.99. Prices vary by country or region and the App Store shows your applicable price. Both options include every feature. Read the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple standard EULA)</a> and <a href="privacy.html">Privacy Policy</a>.</p>
 
+    <h3>App mode: the window doesn’t fit the screen</h3>
+    <p>App mode shows one Mac app and asks the Mac to reshape its window to your screen. This needs Accessibility permission for DeskRoam Host and Host 1.1 or later. Some apps have a minimum window size and stay a little larger; DeskRoam then fills the rest by enlarging the picture. Host attempts to restore the window when you leave app mode, disconnect, or quit normally. Restoration depends on the app and Accessibility permission and is not guaranteed after a crash or forced termination.</p>
+
     <h3>Audio or clipboard is not transferring</h3>
     <p>These features must be enabled in DeskRoam. Clipboard text moves only when you choose to send it or enable synchronization. With an active subscription or permanent purchase, confirm the corresponding option is enabled and both devices remain connected.</p>
 
     <h3>Where did a received file go?</h3>
-    <p>DeskRoam Host saves complete transfers to its “DeskRoam 받은 파일” received-files folder inside the Mac app container and reveals the file in Finder. DeskRoam removes incomplete transfers rather than leaving a partial file.</p>
+    <p>DeskRoam Host saves complete transfers to the DeskRoam folder in your Mac’s Downloads folder and reveals the file in Finder. The first time, macOS may ask to allow DeskRoam Host access to Downloads. DeskRoam removes incomplete transfers rather than leaving a partial file.</p>
 
     <h3>Restore a purchase</h3>
     <p>Open the DeskRoam purchase screen and choose Restore Purchases. This restores qualifying purchases owned by the current Apple Account, including the one-time permanent unlock. A monthly subscription remains active only through its paid-through period. Apple processes all payments; DeskRoam does not receive your payment details.</p>
@@ -70,7 +73,7 @@
       <li>Delete a saved Mac or forget its pairing in the mobile app.</li>
       <li>Use Unregister on the Mac to revoke a trusted device, or Unregister All to revoke every device.</li>
       <li>Delete received files in Finder.</li>
-      <li>Remove the apps to delete their app-container settings. Keychain items may persist after uninstall under Apple platform behavior, so unpair first when possible.</li>
+      <li>Uninstalling the apps does not necessarily remove local preferences or Keychain pairing credentials. Use the in-app unpairing controls first when possible; contact support if you need help removing remaining local data.</li>
     </ul>
 
     <h2>Contact support</h2>
